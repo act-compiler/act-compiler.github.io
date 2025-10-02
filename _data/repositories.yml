@@ -2,3 +2,7 @@ github_users:
   - act-compiler
 
 repo_description_lines_max: 2
+
+github_repos:
+  - act-compiler/taidl
+  - act-compiler/taidl-artifact-micro25
