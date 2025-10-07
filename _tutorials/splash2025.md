@@ -9,7 +9,7 @@ importance: 1
 ## Tutorial: End-to-End Compiler Infrastructure for Emerging Tensor Accelerators
 
 Host Conference: SPLASH 2025 (co-located with ICFP 2025)  
-Date: **Oct 12, 2025 (Sunday)**  
+Date: **Oct 12, 2025** (Sunday)  
 Time: **2:00 PM - 5:30 PM** (UTC+8)  
 Venue: Seminar Room 6 (**COM1-02-03**), NUS School of Computing  
 Location: COM1 Level 2, 13 Computing Dr, Singapore - 117417  
@@ -24,7 +24,7 @@ Prerequisites: Please bring your own laptop with a working installation of Docke
 | 2:00 - 2:10 PM | Welcome and Introduction                                                      | Prof. Charith Mendis (UIUC) |
 | 2:10 - 2:30 PM | Talk: Overview of ACT Ecosystem                                               | Prof. Charith Mendis (UIUC) |
 | 2:30 - 2:40 PM | Tutorial Logistics                                                            | Devansh Jain (UIUC)         |
-| 2:30 - 2:50 PM | Demonstration 1: Quick walkthrough of ACT Ecosystem                           | Devansh Jain (UIUC)         |
+| 2:40 - 2:50 PM | Demonstration 1: Quick walkthrough of ACT Ecosystem                           | Devansh Jain (UIUC)         |
 | 2:50 - 3:10 PM | Hands-on Session 1: Specifying a new Accelerator ISA                          | Devansh Jain (UIUC)         |
 | 3:10 - 3:30 PM | Hands-on Session 2: Writing custom Accelerator Kernels                        | Devansh Jain (UIUC)         |
 | 3:30 - 4:00 PM | Break                                                                         |                             |
