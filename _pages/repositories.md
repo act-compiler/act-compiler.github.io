@@ -6,7 +6,7 @@ nav: true
 nav_order: 4
 ---
 
-## GitHub Organization: [act-compiler](https://github.com/act-compiler)
+### GitHub Organization: [act-compiler](https://github.com/act-compiler)
 
 {% if site.data.repositories.github_repos %}
 
