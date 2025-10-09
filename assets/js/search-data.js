@@ -33,13 +33,19 @@ ninja.data = [{
         },{id: "news-our-paper-titled-taidl-tensor-accelerator-isa-definition-language-with-auto-generation-of-scalable-test-oracles-has-been-accepted-at-micro-2025-tada",
           title: 'Our paper titled TAIDL: Tensor Accelerator ISA Definition Language with Auto-generation of Scalable...',
           description: "",
+          section: "News",},{id: "news-upcoming-we-are-conducting-a-hands-on-tutorial-on-the-act-ecosystem-at-icfp-splash-2025-in-singapore",
+          title: '[Upcoming] We are conducting a hands-on tutorial on the ACT Ecosystem at ICFP/SPLASH...',
+          description: "",
+          section: "News",},{id: "news-upcoming-we-are-conducting-a-hands-on-tutorial-on-the-act-ecosystem-at-micro-2025-in-seoul-south-korea",
+          title: '[Upcoming] We are conducting a hands-on tutorial on the ACT Ecosystem at MICRO...',
+          description: "",
           section: "News",},{id: "tutorials-micro-2025",
           title: 'MICRO 2025',
           description: "In Seoul, South Korea on Oct 19, 2025",
           section: "Tutorials",handler: () => {
               window.location.href = "/tutorials/micro2025/";
-            },},{id: "tutorials-icfp-splash-2025",
-          title: 'ICFP/SPLASH 2025',
+            },},{id: "tutorials-splash-2025",
+          title: 'SPLASH 2025',
           description: "In Singapore on Oct 12, 2025",
           section: "Tutorials",handler: () => {
               window.location.href = "/tutorials/splash2025/";
