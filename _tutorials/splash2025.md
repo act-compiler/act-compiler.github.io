@@ -17,6 +17,26 @@ Prerequisites: Please bring your own laptop with a working installation of Docke
 
 ---
 
+## Introduction
+
+Recent years have seen a proliferation of specialized ML accelerators—proposed in both academia (e.g., Gemmini, FEATHER) and industry (e.g., Google TPU, Intel AMX)—that depart significantly from traditional CPU/GPU architectures.
+However, research on compiler and systems support for these accelerators remains sparse, largely due to the lack of open-source compiler infrastructures capable of targeting them from modern ML frameworks like PyTorch, TensorFlow, and JAX.
+Building such support typically involves considerable manual effort, slowing innovation and creating a gap between hardware and software research communities.
+
+This tutorial introduces the **ACT (Accelerator Compiler Toolkit) ecosystem**, an end-to-end compiler infrastructure that automatically generates compiler backends and essential tooling from high-level ISA specifications.
+
+The ACT ecosystem consists of:
+
+1. **TAIDL (Tensor Accelerator Instruction Description Language)**: A Python-based DSL for specifying accelerator ISAs with formal semantics
+2. **TAIDL-TO (Test Oracle)**: Auto-generated functional simulators for correctness testing
+3. **ACT Backend Generator**: Produces sound and complete ISA-specific compiler backends that use e-graph rewriting and constraint solving
+4. **XLA Integration**: Enables end-to-end compilation from high-level ML frameworks
+
+The tutorial is designed for researchers, practitioners, and students interested in compiler design, programming languages, and AI/ML hardware.
+By the end, participants will have hands-on experience with the complete ACT workflow and understand how to rapidly prototype compiler support for novel accelerator architectures.
+
+---
+
 ## Contents and Timeline (tentative)
 
 | Time           | Topic                                                                         | Presenter                   |
@@ -25,11 +45,11 @@ Prerequisites: Please bring your own laptop with a working installation of Docke
 | 2:10 - 2:30 PM | Talk: Overview of ACT Ecosystem                                               | Prof. Charith Mendis (UIUC) |
 | 2:30 - 2:40 PM | Tutorial Logistics                                                            | Devansh Jain (UIUC)         |
 | 2:40 - 2:50 PM | Demonstration 1: Quick walkthrough of ACT Ecosystem                           | Devansh Jain (UIUC)         |
-| 2:50 - 3:10 PM | Hands-on Session 1: Specifying a new Accelerator ISA                          | Devansh Jain (UIUC)         |
-| 3:10 - 3:30 PM | Hands-on Session 2: Writing custom Accelerator Kernels                        | Devansh Jain (UIUC)         |
+| 2:50 - 3:10 PM | Hands-on Exercise 1: Specifying a new Accelerator ISA                         | Devansh Jain (UIUC)         |
+| 3:10 - 3:30 PM | Hands-on Exercise 2: Writing custom Accelerator Kernels                       | Devansh Jain (UIUC)         |
 | 3:30 - 4:00 PM | Break                                                                         |                             |
 | 4:00 - 4:30 PM | Talk: Automatically Generating Compiler Backends just from ISA Specifications | Akash Pardeshi (UIUC)       |
-| 4:30 - 5:00 PM | Hands-on Session 3: Generating a Compiler Backend for a new Accelerator ISA   | Devansh Jain (UIUC)         |
+| 4:30 - 5:00 PM | Hands-on Exercise 3: Generating a Compiler Backend for a new Accelerator ISA  | Devansh Jain (UIUC)         |
 | 5:00 - 5:10 PM | Demonstration 2: Integrating the new Accelerator Backend with XLA Compiler    | Devansh Jain (UIUC)         |
 | 5:10 - 5:30 PM | Q&A and Closing Remarks                                                       | Devansh Jain (UIUC)         |
 
