@@ -18,7 +18,7 @@ Building such support involves considerable manual effort, slowing innovation an
 
 To bridge this gap, we present **ACT (Accelerator Compiler Toolkit) Ecosystem**, an ecosystem that automatically generates complete compiler backends and essential software tooling from high-level ISA specifications of tensor accelerators.
 
-Over the past year, ACT has evolved into a comprehensive ecosystem that includes:
+The ACT ecosystem consists of:
 
 1. **TAIDL (Tensor Accelerator Instruction Description Language)**: A Python-based DSL for specifying tensor accelerator ISAs.
 TAIDL leverages tensor IRs like XLA-HLO to compactly and precisely model execution semantics of tensor accelerator ISAs.
