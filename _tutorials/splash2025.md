@@ -23,9 +23,9 @@ Recent years have seen a proliferation of specialized ML accelerators -- propose
 However, research on compiler and systems support for these accelerators remains sparse, largely due to the lack of mature open-source compiler infrastructures capable of targeting them from popular ML frameworks like PyTorch, and JAX.
 Building such support involves considerable manual effort, slowing innovation and creating a gap between hardware and software research communities.
 
-This tutorial introduces the **ACT (Accelerator Compiler Toolkit) ecosystem**, an end-to-end compiler infrastructure that automatically generates compiler backends and essential tooling from high-level ISA specifications.
+This tutorial introduces the **ACT (Accelerator Compiler Toolkit)**, an ecosystem that automatically generates complete compiler backends and essential software tooling from high-level ISA specifications of tensor accelerators.
 
-The ACT ecosystem consists of:
+Over the past year, ACT has evolved into a comprehensive ecosystem that includes:
 
 1. **TAIDL (Tensor Accelerator Instruction Description Language)**: A Python-based DSL for specifying tensor accelerator ISAs
 2. **TAIDL-TO (Test Oracle) Generator**: Automatically generates _fast & scalable_ functional simulators from TAIDL specifications
