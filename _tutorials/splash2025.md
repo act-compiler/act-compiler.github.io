@@ -14,7 +14,6 @@ Time: **2:00 PM - 5:30 PM** (UTC+8)
 Venue: Seminar Room 6 (**COM1-02-03**), NUS School of Computing  
 Location: COM1 Level 2, 13 Computing Dr, Singapore - 117417  
 Prerequisites: Please bring your own laptop with a working installation of Docker.  
-GitHub Repository: [tutorials-splash2025](https://github.com/act-compiler/tutorials-splash25)
 
 ---
 

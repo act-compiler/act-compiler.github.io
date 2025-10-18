@@ -11,9 +11,9 @@ importance: 2
 Host Conference: MICRO 2025  
 Date: **Oct 19, 2025** (Sunday)  
 Time: **1:00 PM - 5:00 PM** (UTC+9)  
-Venue: Berkeley, 36th Floor, Lotte Hotel Seoul  
+Venue: Berkeley Suite, 36th Floor, Lotte Hotel Seoul  
 Location: 30 Eulji-ro, Jung District, Seoul, South Korea  
-Prerequisites: Please bring your own laptop with a working installation of Docker.
+Prerequisites: Please bring your own laptop with a working installation of Docker and follow the [tutorial setup instructions](https://github.com/act-compiler/act/blob/master/tutorials/micro25/setup.md).
 
 ---
 
@@ -41,13 +41,13 @@ By the end, participants will have hands-on experience with the complete ACT wor
 
 | Time           | Topic                                                                         | Presenter                   |
 | -------------- | ----------------------------------------------------------------------------- | --------------------------- |
-| 1:00 - 1:10 PM | Welcome and Introduction                                                      | Prof. Charith Mendis (UIUC) |
-| 1:10 - 1:30 PM | Talk: Overview of ACT Ecosystem                                               | Prof. Charith Mendis (UIUC) |
-| 1:30 - 1:40 PM | Tutorial Logistics                                                            | Devansh Jain (UIUC)         |
+| 1:00 - 1:15 PM | Tutorial Logistics                                                            | Devansh Jain (UIUC)         |
+| 1:15 - 1:20 PM | Welcome and Introduction                                                      | Prof. Charith Mendis (UIUC) |
+| 1:20 - 1:40 PM | Talk: Overview of ACT Ecosystem                                               | Prof. Charith Mendis (UIUC) |
 | 1:40 - 1:50 PM | Demonstration 1: Quick walkthrough of ACT Ecosystem                           | Devansh Jain (UIUC)         |
 | 1:50 - 2:20 PM | Hands-on Exercise 1: Specifying a new Accelerator ISA                         | Devansh Jain (UIUC)         |
-| 2:20 - 2:40 PM | Hands-on Exercise 2: Writing custom Accelerator Kernels                       | Devansh Jain (UIUC)         |
-| 2:40 - 3:00 PM | Talk: Expressivity and Extensibility of TAIDL                                 | Marco Frigo (UIUC)          |
+| 2:20 - 2:40 PM | Talk: Expressivity and Extensibility of TAIDL                                 | Marco Frigo (UIUC)          |
+| 2:40 - 3:00 PM | Hands-on Exercise 2: Writing custom Accelerator Kernels                       | Devansh Jain (UIUC)         |
 | 3:00 - 3:30 PM | Break                                                                         |                             |
 | 3:30 - 4:00 PM | Talk: Automatically Generating Compiler Backends just from ISA Specifications | Akash Pardeshi (UIUC)       |
 | 4:00 - 4:30 PM | Hands-on Exercise 3: Generating a Compiler Backend for a new Accelerator ISA  | Devansh Jain (UIUC)         |
