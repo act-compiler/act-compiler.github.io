@@ -4,5 +4,9 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - act-compiler/act
   - act-compiler/taidl
+  - act-compiler/act-oracle
+  - act-compiler/act-backend
   - act-compiler/taidl-artifact-micro25
+  - act-compiler/tutorials-splash25
