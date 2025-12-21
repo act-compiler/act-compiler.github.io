@@ -39,7 +39,12 @@ ninja.data = [{
           section: "News",},{id: "news-today-berkeley-suite-at-micro-2025-see-you-there-we-are-conducting-a-hands-on-tutorial-on-the-act-ecosystem-at-micro-2025-in-seoul-south-korea",
           title: '[Today!] Berkeley Suite at MICRO 2025 - see you there! We are conducting...',
           description: "",
-          section: "News",},{id: "tutorials-micro-2025",
+          section: "News",},{id: "tutorials-asplos-2026",
+          title: 'ASPLOS 2026',
+          description: "In Pittsburgh, USA on Mar 22, 2026",
+          section: "Tutorials",handler: () => {
+              window.location.href = "/tutorials/asplos2026/";
+            },},{id: "tutorials-micro-2025",
           title: 'MICRO 2025',
           description: "In Seoul, South Korea on Oct 19, 2025",
           section: "Tutorials",handler: () => {
