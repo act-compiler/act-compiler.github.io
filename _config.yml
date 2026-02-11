@@ -540,3 +540,26 @@ third_party_libraries:
       css: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.css"
       js: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.js"
     version: "2.1.8"
+
+# -----------------------------------------------------------------------------
+# Jekyll Get JSON (GitHub API Integration)
+# -----------------------------------------------------------------------------
+
+# Fetch repository data from GitHub API during build
+# Uncomment and configure to enable live repository statistics
+# Note: GitHub has unauthenticated rate limits of 60 requests/hour
+# To increase limits, create a PAT and add it to _data/repositories.yml
+
+get_json:
+  - url: https://api.github.com/repos/act-compiler/act
+    data: github_act
+  - url: https://api.github.com/repos/act-compiler/taidl
+    data: github_taidl
+  - url: https://api.github.com/repos/act-compiler/act-oracle
+    data: github_act_oracle
+  - url: https://api.github.com/repos/act-compiler/act-backend
+    data: github_act_backend
+  - url: https://api.github.com/repos/act-compiler/taidl-artifact-micro25
+    data: github_taidl_artifact_micro25
+  - url: https://api.github.com/repos/act-compiler/tutorials-splash25
+    data: github_tutorials_splash25

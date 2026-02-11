@@ -3,10 +3,16 @@ github_users:
 
 repo_description_lines_max: 2
 
+# Optional: Add a GitHub PAT (Personal Access Token) to improve API rate limits
+# Create a token at https://github.com/settings/tokens with 'public_repo' scope
+# github_token: your_github_token_here
+
+# Alternative rendering method:
+# Set use_github_api to true to fetch live data from GitHub API
+# This is more reliable than github-readme-stats and avoids rendering issues
+use_github_api: true
+
 github_repos:
   - act-compiler/act
   - act-compiler/taidl
-  - act-compiler/act-oracle
-  - act-compiler/act-backend
   - act-compiler/taidl-artifact-micro25
-  - act-compiler/tutorials-splash25
