@@ -26,6 +26,6 @@ TAIDL leverages tensor IRs like XLA-HLO to compactly and precisely model executi
 3. **ACT Backend Generator**: Automatically generates sound and complete compiler backends just from TAIDL specification. ACT backends match or outperform state-of-the-art expert-written libraries, while maintaining low compile times (\<1 sec).
 4. **XLA Integration**: Enables end-to-end compilation from popular ML frameworks like JAX, TensorFlow, and PyTorch
 
-We will present hands-on tutorials at [ICFP/SPLASH 2025 (Singapore, Oct 12)](https://act-compiler.github.io/tutorials/splash2025/) and [MICRO 2025 (Seoul, Oct 19)](https://act-compiler.github.io/tutorials/micro2025/) to demonstrate the capabilities of the ACT ecosystem.
+We presented hands-on tutorials at [ICFP/SPLASH 2025 (Singapore, Oct 12)](https://act-compiler.github.io/tutorials/splash2025/) and [MICRO 2025 (Seoul, Oct 19)](https://act-compiler.github.io/tutorials/micro2025/) to demonstrate the capabilities of the ACT ecosystem.
 The tutorials are designed for researchers, practitioners, and students interested in compiler design, programming languages, and AI/ML hardware.
 By the end, participants will have hands-on experience with the complete ACT workflow and understand how to rapidly prototype compiler support for novel accelerator architectures.
