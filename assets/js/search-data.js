@@ -39,12 +39,7 @@ ninja.data = [{
           section: "News",},{id: "news-we-organized-a-hands-on-tutorial-on-the-act-ecosystem-at-micro-2025-in-seoul-south-korea",
           title: 'We organized a hands-on tutorial on the ACT Ecosystem at MICRO 2025 in...',
           description: "",
-          section: "News",},{id: "news-2026-02-10-asplos-tutorial",
-          title: '[2026 02 10] asplos Tutorial',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/%5B2026-02-10%5D%20asplos-tutorial.html";
-            },},{id: "tutorials-asplos-2026",
+          section: "News",},{id: "tutorials-asplos-2026",
           title: 'ASPLOS 2026',
           description: "In Pittsburgh, USA on Mar 22, 2026",
           section: "Tutorials",handler: () => {
