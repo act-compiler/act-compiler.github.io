@@ -1,0 +1,22 @@
+# Project leadership and team members
+# ─────────────────────────────────────────────────────────────────────────────
+# The first entry with role: lead is shown in the about-page banner as
+# "Project Lead". The first entry with role: pi is shown as "PI".
+# All entries are available for the /team/ page.
+#
+# Fields:
+#   name        – display name
+#   url         – personal/lab website
+#   role        – one of: lead | pi | phd | postdoc | ms | undergrad | collaborator
+#   affiliation – short affiliation string (e.g. "PhD Student, UIUC")
+#   image       – optional, relative to assets/img/ (e.g. team/devansh.jpg)
+
+- name: Devansh Jain
+  url: https://devansh-dvj.github.io
+  role: lead
+  affiliation: PhD Student, UIUC
+
+- name: Prof. Charith Mendis
+  url: https://charithmendis.com/
+  role: pi
+  affiliation: UIUC

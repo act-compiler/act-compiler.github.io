@@ -38,6 +38,21 @@ layout: default
       </div>
     {% endif %}
 
+    <!-- Project leadership banner -->
+    {% assign team_lead = site.data.team | where: "role", "lead" | first %}
+    {% assign team_pi   = site.data.team | where: "role", "pi"   | first %}
+    {% if team_lead %}
+      <div class="alert alert-info" role="alert" style="margin-bottom: 1.5rem;">
+        <strong>Project Lead:</strong>
+        <a href="{{ team_lead.url }}" target="_blank">{{ team_lead.name }}</a>
+        ({{ team_lead.affiliation }}) &nbsp;&middot;&nbsp;
+        <strong>PI:</strong>
+        <a href="{{ team_pi.url }}" target="_blank">{{ team_pi.name }}</a>
+        ({{ team_pi.affiliation }}) &nbsp;&middot;&nbsp;
+        <a href="{{ '/team/' | relative_url }}">Meet the Team &rarr;</a>
+      </div>
+    {% endif %}
+
     <div class="clearfix">{{ content }}</div>
 
     <!-- Selected papers -->
