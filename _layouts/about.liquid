@@ -2,6 +2,14 @@
 layout: default
 ---
 <div class="post">
+  {%- comment -%}Styles for logo rows used in the collaborations/sponsors section{%- endcomment -%}
+  <style>
+    .logo-row { display: flex; flex-wrap: wrap; gap: 1.5rem 3rem; align-items: center; margin: 1.2rem 0 1.8rem 0; }
+    .logo-row-lead { margin-bottom: 0.5rem; padding-bottom: 1rem; border-bottom: 1px solid #e0e0e0; }
+    .logo-row a { display: flex; align-items: center; text-decoration: none; color: inherit; }
+    .logo-row img { height: 55px; width: auto; max-width: 180px; object-fit: contain; filter: grayscale(15%); transition: filter 0.2s; }
+    .logo-row a:hover img { filter: grayscale(0%); }
+  </style>
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
@@ -61,6 +69,42 @@ layout: default
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Collaborating Universities & Sponsors -->
+    {% if page.collaborations %}
+      {% if site.collaborations.lead_row.size > 0 or site.collaborations.partner_row.size > 0 %}
+        <h2>Collaborating Universities</h2>
+        <p>{{ site.collaborations.description }}</p>
+        {% if site.collaborations.lead_row.size > 0 %}
+          <div class="logo-row logo-row-lead">
+            {% for org in site.collaborations.lead_row %}
+              <a href="{{ org.url }}" target="_blank" title="{{ org.name }}{% if org.lead %} (Lead){% endif %}">
+                <img src="{{ org.logo | relative_url }}" alt="{{ org.name }}"{% if org.height %} style="height: {{ org.height }}"{% endif %} />
+              </a>
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% if site.collaborations.partner_row.size > 0 %}
+          <div class="logo-row">
+            {% for org in site.collaborations.partner_row %}
+              <a href="{{ org.url }}" target="_blank" title="{{ org.name }}">
+                <img src="{{ org.logo | relative_url }}" alt="{{ org.name }}"{% if org.height %} style="height: {{ org.height }}"{% endif %} />
+              </a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endif %}
+      {% if site.sponsors.size > 0 %}
+        <h2>Sponsors</h2>
+        <div class="logo-row">
+          {% for sponsor in site.sponsors %}
+            <a href="{{ sponsor.url }}" target="_blank" title="{{ sponsor.name }}">
+              <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }}"{% if sponsor.height %} style="height: {{ sponsor.height }}"{% endif %} />
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
     {% endif %}
 
     <!-- Social -->

@@ -554,3 +554,67 @@ third_party_libraries:
       css: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.css"
       js: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.js"
     version: "2.1.8"
+
+# -----------------------------------------------------------------------------
+# Collaborating universities (shown on about page after publications)
+# lead_row: highlighted row (e.g. lead institution + center logo)
+# partner_row: remaining collaborators
+# -----------------------------------------------------------------------------
+
+collaborations:
+  description: >
+    ACT is developed within the
+    <a href="https://acecenter.grainger.illinois.edu/">ACE Center for Evolvable Computing</a>,
+    an SRC JUMP 2.0 Center led by the University of Illinois Urbana-Champaign
+    and spanning multiple partner institutions.
+  lead_row:
+    - name: University of Illinois Urbana-Champaign
+      label: UIUC
+      lead: true
+      url: https://illinois.edu
+      logo: /assets/img/logos/uiuc.jpg
+    - name: ACE Center for Evolvable Computing
+      label: ACE Center
+      url: https://acecenter.grainger.illinois.edu/
+      logo: /assets/img/logos/ace.jpg
+  partner_row:
+    - name: Cornell University
+      label: Cornell
+      url: https://www.cornell.edu/
+      logo: /assets/img/logos/cornell.jpg
+    - name: Stanford University
+      label: Stanford
+      url: https://www.stanford.edu/
+      logo: /assets/img/logos/stanford.jpg
+    - name: University of Michigan
+      label: UMich
+      url: https://umich.edu/
+      logo: /assets/img/logos/umich.jpg
+    - name: Georgia Tech
+      label: Georgia Tech
+      url: https://www.gatech.edu/
+      logo: /assets/img/logos/gatech.jpg
+
+# -----------------------------------------------------------------------------
+# Sponsors (shown on about page after collaborating universities)
+# To add a sponsor: append a new entry with name, label, url, logo
+# -----------------------------------------------------------------------------
+
+sponsors:
+  - name: Semiconductor Research Corporation
+    label: SRC
+    url: https://www.src.org/
+    logo: /assets/img/logos/src.jpg
+  - name: DARPA
+    label: DARPA
+    url: https://www.darpa.mil/
+    logo: /assets/img/logos/darpa.png
+  - name: National Science Foundation
+    label: NSF
+    url: https://www.nsf.gov/
+    logo: /assets/img/logos/nsf.png
+    height: 90px
+  - name: Amazon
+    label: Amazon
+    url: https://aws.amazon.com/
+    logo: /assets/img/logos/amazon.png
