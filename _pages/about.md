@@ -27,6 +27,20 @@ TAIDL leverages tensor IRs like XLA-HLO to compactly and precisely model executi
 3. **ACT Backend Generator**: Automatically generates sound and complete compiler backends just from TAIDL specification. ACT backends match or outperform state-of-the-art expert-written libraries, while maintaining low compile times (\<1 sec).
 4. **XLA Integration**: Enables end-to-end compilation from popular ML frameworks like JAX, TensorFlow, and PyTorch
 
-We presented hands-on tutorials at [ICFP/SPLASH 2025 (Singapore, Oct 12)](https://act-compiler.github.io/tutorials/splash2025/) and [MICRO 2025 (Seoul, Oct 19)](https://act-compiler.github.io/tutorials/micro2025/) to demonstrate the capabilities of the ACT ecosystem.
-The tutorials are designed for researchers, practitioners, and students interested in compiler design, programming languages, and AI/ML hardware.
-By the end, participants will have hands-on experience with the complete ACT workflow and understand how to rapidly prototype compiler support for novel accelerator architectures.
+### Getting Started
+
+We recommend starting with our [MICRO 2025 tutorial](https://github.com/act-compiler/act/tree/master/tutorials/micro25).
+The tutorial provides a step-by-step walkthrough of the ACT ecosystem, requiring no prior experience with AI accelerators or ML compilers, and provides hands-on exercises to get familiar with TAIDL Python DSL and automated tool generation. We encourage you to follow along and experiment with the code.
+
+A revised tutorial will be presented at [ASPLOS 2026](/tutorials/asplos2026/) (Pittsburgh, Mar 22) -- updated materials coming soon.
+
+### Collaboration Opportunities
+
+We are open to collaborations to extend the ACT ecosystem in various directions, including but not limited to:
+
+- **AI accelerator designers** -- hardware teams that have built or are designing custom AI accelerators and want to leverage the ACT ecosystem to automatically get software tooling, without the overhead of building a separate software stack
+- **ISA-driven automation** -- researchers working on code generation, formal verification, or simulation from high-level hardware specifications, who want to leverage TAIDL as a common language for modeling and automation
+- **ML compiler teams** -- teams building or maintaining compilers for existing commercial accelerators (e.g., AWS Trainium, custom ASICs) who want to explore ISA-driven automation or benchmark against ACT-generated backends
+- **MLSys research** -- researchers working on compiler optimizations, autotuning, or hardware-software co-design for AI accelerators, who want to use ACT as a platform for rapid prototyping and evaluation
+
+If any of these resonate -- or if you have related ideas along these themes -- reach out to [Devansh Jain](mailto:devansh9@illinois.edu) or [Prof. Charith Mendis](mailto:charithm@illinois.edu).
