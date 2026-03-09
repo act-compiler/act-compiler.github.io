@@ -3,7 +3,7 @@ layout: page
 title: SPLASH 2025
 permalink: /tutorials/splash2025/
 description: In Singapore on Oct 12, 2025
-importance: 1
+importance: 3
 ---
 
 ## Tutorial: End-to-End Compiler Infrastructure for Emerging Tensor Accelerators
