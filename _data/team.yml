@@ -15,6 +15,7 @@
   url: https://charithmendis.com/
   role: pi
   affiliation: Assistant Professor, UIUC
+  short_affiliation: UIUC
 
 # ── Graduate Students ─────────────────────────────────────────────────────────
 
@@ -31,6 +32,7 @@
   since: Aug 2025
 
 - name: Nitin Krishna
+  url: https://www.linkedin.com/in/nitin-krishna-9417a124b/
   role: ms
   affiliation: MCS, UIUC (expected 2027)
   since: Dec 2025
@@ -44,33 +46,38 @@
   since: Apr 2024
 
 - name: Mihir Tandon
+  url: https://www.linkedin.com/in/mihir-tandon-176a83294/
   role: undergrad
-  affiliation: BS CS, UIUC (expected 2027)
+  affiliation: BS CE, UIUC (expected 2027)
+  since: Dec 2025
+
+- name: Alan Xie
+  url: https://www.linkedin.com/in/alanxie27/
+  role: undergrad
+  affiliation: BS CS+Stats, UIUC (expected 2029)
   since: Dec 2025
 
 - name: Pedro Couto
   role: undergrad
-  affiliation: BS CS, UIUC (expected 2029)
+  affiliation: BS CE, UIUC (expected 2029)
   since: Dec 2025
 
 - name: Tanmay Garudadri
+  url: https://www.linkedin.com/in/tanmay-garudadri/
   role: undergrad
-  affiliation: BS CS, UIUC (expected 2028)
-  since: Dec 2025
-
-- name: Alan Xie
-  role: undergrad
-  affiliation: BS CS, UIUC (expected 2029)
+  affiliation: BS CE, UIUC (expected 2028)
   since: Dec 2025
 
 - name: Aarav Khanna
+  url: https://www.linkedin.com/in/aarav-khanna-a85b63327/
   role: undergrad
-  affiliation: BS Physics, UIUC (expected 2028)
+  affiliation: BS Physics & ECE, UIUC (expected 2028)
   since: Dec 2025
 
 # ── Alumni ────────────────────────────────────────────────────────────────────
 
 - name: Krut Patel
+  url: https://www.linkedin.com/in/krutpatel99/
   role: alumni
   affiliation: MS CS, UIUC (graduated 2025)
   since: Apr 2024
