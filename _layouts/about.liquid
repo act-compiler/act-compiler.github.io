@@ -73,21 +73,21 @@ layout: default
 
     <!-- Collaborating Universities & Sponsors -->
     {% if page.collaborations %}
-      {% if site.collaborations.lead_row.size > 0 or site.collaborations.partner_row.size > 0 %}
+      {% if site.collaborations.lead_row.size > 0 or site.collaborations.collaborator_row.size > 0 %}
         <h2>Collaborating Universities</h2>
         <p>{{ site.collaborations.description }}</p>
         {% if site.collaborations.lead_row.size > 0 %}
           <div class="logo-row logo-row-lead">
             {% for org in site.collaborations.lead_row %}
-              <a href="{{ org.url }}" target="_blank" title="{{ org.name }}{% if org.lead %} (Lead){% endif %}">
+              <a href="{{ org.url }}" target="_blank" title="{{ org.name }}">
                 <img src="{{ org.logo | relative_url }}" alt="{{ org.name }}"{% if org.height %} style="height: {{ org.height }}"{% endif %} />
               </a>
             {% endfor %}
           </div>
         {% endif %}
-        {% if site.collaborations.partner_row.size > 0 %}
+        {% if site.collaborations.collaborator_row.size > 0 %}
           <div class="logo-row">
-            {% for org in site.collaborations.partner_row %}
+            {% for org in site.collaborations.collaborator_row %}
               <a href="{{ org.url }}" target="_blank" title="{{ org.name }}">
                 <img src="{{ org.logo | relative_url }}" alt="{{ org.name }}"{% if org.height %} style="height: {{ org.height }}"{% endif %} />
               </a>

@@ -6,11 +6,6 @@ permalink: /
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 collaborations: true # includes collaborating universities and sponsors sections
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
 ---
 
 Recent years have seen a proliferation of specialized ML accelerators -- proposed in both academia (e.g., Gemmini, FEATHER) and industry (e.g., Google TPU, Intel AMX) -- that depart significantly from traditional CPU/GPU architectures.
@@ -30,7 +25,7 @@ TAIDL leverages tensor IRs like XLA-HLO to compactly and precisely model executi
 ### Getting Started
 
 We recommend starting with our [MICRO 2025 tutorial](https://github.com/act-compiler/act/tree/master/tutorials/micro25).
-The tutorial provides a step-by-step walkthrough of the ACT ecosystem, requiring no prior experience with AI accelerators or ML compilers, and provides hands-on exercises to get familiar with TAIDL Python DSL and automated tool generation. We encourage you to follow along and experiment with the code.
+The tutorial provides a step-by-step walkthrough of the ACT ecosystem, requiring no prior experience with AI accelerators or ML compilers, and provides hands-on exercises to get familiar with the TAIDL Python DSL and automated tool generation. We encourage you to follow along and experiment with the code.
 
 A revised tutorial will be presented at [ASPLOS 2026](/tutorials/asplos2026/) (Pittsburgh, Mar 22) -- updated materials coming soon.
 
