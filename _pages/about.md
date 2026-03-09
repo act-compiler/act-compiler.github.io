@@ -3,21 +3,26 @@ layout: about
 title: About
 permalink: /
 
+profile:
+  align: right
+  image: act.png
+  image_circular: false
+
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 collaborations: true # includes collaborating universities and sponsors sections
 ---
 
-Recent years have seen a proliferation of specialized ML accelerators -- proposed in both academia (e.g., Gemmini, FEATHER) and industry (e.g., Google TPU, Intel AMX) -- that depart significantly from traditional CPU/GPU architectures.
+Recent years have seen a proliferation of specialized AI accelerators -- proposed in both academia (e.g., Gemmini, FEATHER, EVA) and industry (e.g., Google TPU, Intel AMX, AWS Trainium) -- that depart significantly from traditional CPU/GPU architectures.
 However, research on compiler and systems support for these accelerators remains sparse, largely due to the lack of mature open-source compiler infrastructures capable of targeting them from popular ML frameworks like PyTorch, and JAX.
 Building such support involves considerable manual effort, slowing innovation and creating a gap between hardware and software research communities.
 
-To bridge this gap, we present **ACT (Accelerator Compiler Toolkit) Ecosystem**, an ecosystem that automatically generates complete compiler backends and essential software tooling from high-level ISA specifications of tensor accelerators.
+To bridge this gap, we present **ACT (Accelerator Compiler Toolkit) Ecosystem**, an ecosystem that automatically generates complete compiler backends and essential software tooling from high-level ISA specifications of AI accelerators.
 
 The ACT ecosystem consists of:
 
-1. **TAIDL (Tensor Accelerator ISA Definition Language)**: A Python-based DSL for specifying tensor accelerator ISAs.
-TAIDL leverages tensor IRs like XLA-HLO to compactly and precisely model execution semantics of tensor accelerator ISAs.
+1. **TAIDL (Tensor Accelerator ISA Definition Language)**: A Python-based DSL for specifying AI accelerator ISAs.
+TAIDL leverages tensor IRs like XLA-HLO to compactly and precisely model execution semantics of AI accelerator ISAs.
 2. **TAIDL-TO (Test Oracle) Generator**: Automatically generates scalable functional simulators just from TAIDL specifications, enabling correctness testing of the software stack. TAIDL-TOs are orders of magnitude faster than existing simulators.
 3. **ACT Backend Generator**: Automatically generates sound and complete compiler backends just from TAIDL specification. ACT backends match or outperform state-of-the-art expert-written libraries, while maintaining low compile times (\<1 sec).
 4. **XLA Integration**: Enables end-to-end compilation from popular ML frameworks like JAX, TensorFlow, and PyTorch

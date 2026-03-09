@@ -50,14 +50,10 @@ layout: default
     {% assign team_lead = site.data.team | where: "role", "lead" | first %}
     {% assign team_pi   = site.data.team | where: "role", "pi"   | first %}
     {% if team_lead %}
-      <div class="alert alert-info" role="alert" style="margin-bottom: 1.5rem;">
-        <strong>Project Lead:</strong>
-        <a href="{{ team_lead.url }}" target="_blank">{{ team_lead.name }}</a>
-        ({{ team_lead.affiliation }}) &nbsp;&middot;&nbsp;
-        <strong>PI:</strong>
-        <a href="{{ team_pi.url }}" target="_blank">{{ team_pi.name }}</a>
-        ({{ team_pi.affiliation }}) &nbsp;&middot;&nbsp;
-        <a href="{{ '/team/' | relative_url }}">Meet the Team &rarr;</a>
+      <div style="line-height: 1.6; font-size: 0.95em; margin-bottom: 1.2rem;">
+        <strong>Research Lead:</strong> <a href="{{ team_lead.url }}" target="_blank">{{ team_lead.name }}</a> ({{ team_lead.affiliation }})<br>
+        <strong>Principal Investigator:</strong> <a href="{{ team_pi.url }}" target="_blank">{{ team_pi.name }}</a> ({{ team_pi.affiliation }})<br>
+        <a href="{{ '/team/' | relative_url }}">Meet our research team &rarr;</a>
       </div>
     {% endif %}
 
