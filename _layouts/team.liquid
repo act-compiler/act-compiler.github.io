@@ -1,0 +1,108 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">Research Team</h1>
+  </header>
+
+  <article>
+    <style>
+      .team-section { margin: 2rem 0 2.5rem; }
+      .team-section h2 { font-size: 1.2rem; font-weight: 600; border-bottom: 1px solid #e0e0e0; padding-bottom: 0.4rem; margin-bottom: 1.2rem; text-transform: uppercase; letter-spacing: 0.04em; color: #444; }
+
+      /* Leadership cards */
+      .leadership-grid { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+      .leader-card { background: #f8f9fa; border-radius: 8px; padding: 1rem 1.4rem; flex: 1 1 200px; max-width: 300px; border-left: 3px solid #b31b1b; }
+      .leader-card .lc-name { font-weight: 600; font-size: 1rem; margin-bottom: 0.2rem; }
+      .leader-card .lc-role { color: #b31b1b; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.3rem; }
+      .leader-card .lc-affil { color: #555; font-size: 0.88rem; }
+      .leader-card .lc-since { color: #999; font-size: 0.8rem; margin-top: 0.2rem; }
+
+      /* Member list (MS + undergrad) */
+      .member-list { display: flex; flex-direction: column; gap: 0; }
+      .member-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding: 0.45rem 0; border-bottom: 1px solid #f2f2f2; }
+      .member-row:last-child { border-bottom: none; }
+      .mr-name { font-weight: 500; min-width: 180px; }
+      .mr-affil { color: #555; font-size: 0.88rem; flex: 1; }
+      .mr-since { color: #999; font-size: 0.82rem; white-space: nowrap; }
+
+      /* Alumni list */
+      .alumni-list { display: flex; flex-direction: column; gap: 0; }
+      .alumni-row { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.4rem 1rem; padding: 0.45rem 0; border-bottom: 1px solid #f2f2f2; }
+      .alumni-row:last-child { border-bottom: none; }
+      .ar-name { font-weight: 500; min-width: 180px; }
+      .ar-affil { color: #555; font-size: 0.88rem; flex: 1; }
+      .ar-period { color: #aaa; font-size: 0.8rem; white-space: nowrap; }
+    </style>
+
+    {% assign ms_members        = site.data.team | where: "role", "ms" %}
+    {% assign undergrad_members = site.data.team | where: "role", "undergrad" %}
+    {% assign alumni            = site.data.team | where: "role", "alumni" %}
+
+    <!-- ── Leadership ──────────────────────────────────────────────────────── -->
+    <div class="team-section">
+      <div class="leadership-grid">
+        {% for person in site.data.team %}
+          {% if person.role == "lead" or person.role == "pi" %}
+            <div class="leader-card">
+              <div class="lc-role">{% if person.role == "lead" %}Research Lead{% else %}Principal Investigator{% endif %}</div>
+              <div class="lc-name">{% if person.url %}<a href="{{ person.url }}" target="_blank">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}</div>
+              <div class="lc-affil">{{ person.affiliation }}</div>
+              {% if person.since %}<div class="lc-since">Since {{ person.since }}</div>{% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- ── Graduate Students ───────────────────────────────────────────────── -->
+    {% if ms_members.size > 0 %}
+      <div class="team-section">
+        <h2>Graduate Students</h2>
+        <div class="member-list">
+          {% for p in ms_members %}
+            <div class="member-row">
+              <span class="mr-name">{% if p.url %}<a href="{{ p.url }}" target="_blank">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
+              <span class="mr-affil">{{ p.affiliation }}</span>
+              {% if p.since %}<span class="mr-since">Since {{ p.since }}</span>{% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    <!-- ── Undergraduate Students ─────────────────────────────────────────── -->
+    {% if undergrad_members.size > 0 %}
+      <div class="team-section">
+        <h2>Undergraduate Students</h2>
+        <div class="member-list">
+          {% for p in undergrad_members %}
+            <div class="member-row">
+              <span class="mr-name">{% if p.url %}<a href="{{ p.url }}" target="_blank">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
+              <span class="mr-affil">{{ p.affiliation }}</span>
+              {% if p.since %}<span class="mr-since">Since {{ p.since }}</span>{% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    <!-- ── Alumni ─────────────────────────────────────────────────────────── -->
+    {% if alumni.size > 0 %}
+      <div class="team-section">
+        <h2>Alumni</h2>
+        <div class="alumni-list">
+          {% for p in alumni %}
+            <div class="alumni-row">
+              <span class="ar-name">{% if p.url %}<a href="{{ p.url }}" target="_blank">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
+              <span class="ar-affil">{{ p.affiliation }}{% if p.now %} &middot; Now: {{ p.now }}{% endif %}</span>
+              <span class="ar-period">{{ p.since }} – {{ p.until }}</span>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+  </article>
+</div>

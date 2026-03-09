@@ -1,22 +1,99 @@
 # Project leadership and team members
 # ─────────────────────────────────────────────────────────────────────────────
-# The first entry with role: lead is shown in the about-page banner as
-# "Research Lead". The first entry with role: pi is shown as "Principle Investigator".
-# All entries are available for the /team/ page.
-#
-# Fields:
-#   name        – display name
-#   url         – personal/lab website
-#   role        – one of: lead | pi | phd | postdoc | ms | undergrad | collaborator
-#   affiliation – short affiliation string (e.g. "PhD Student, UIUC")
-#   image       – optional, relative to assets/img/ (e.g. team/devansh.jpg)
+# role: lead | pi | ms | undergrad | alumni
+# alumni extra fields: until, now
+
+# ── Leadership ────────────────────────────────────────────────────────────────
 
 - name: Devansh Jain
   url: https://devansh-dvj.github.io
   role: lead
   affiliation: PhD Student, UIUC
+  since: Aug 2023
 
 - name: Prof. Charith Mendis
   url: https://charithmendis.com/
   role: pi
-  affiliation: UIUC
+  affiliation: Assistant Professor, UIUC
+
+# ── Graduate Students ─────────────────────────────────────────────────────────
+
+- name: Akash Pardeshi
+  url: https://www.linkedin.com/in/akashpardeshi/
+  role: ms
+  affiliation: MS ECE, UIUC (expected 2026)
+  since: Apr 2024
+
+- name: Saatvik Lochan
+  url: http://linkedin.com/in/saatvik-lochan-64784718b/
+  role: ms
+  affiliation: MS CS, UIUC (expected 2027)
+  since: Aug 2025
+
+- name: Nitin Krishna
+  role: ms
+  affiliation: MCS, UIUC (expected 2027)
+  since: Dec 2025
+
+# ── Undergraduate Students ────────────────────────────────────────────────────
+
+- name: Marco Frigo
+  url: https://www.linkedin.com/in/marco-f-543773204/
+  role: undergrad
+  affiliation: BS CE, UIUC (expected 2027)
+  since: Apr 2024
+
+- name: Mihir Tandon
+  role: undergrad
+  affiliation: BS CS, UIUC (expected 2027)
+  since: Dec 2025
+
+- name: Pedro Couto
+  role: undergrad
+  affiliation: BS CS, UIUC (expected 2029)
+  since: Dec 2025
+
+- name: Tanmay Garudadri
+  role: undergrad
+  affiliation: BS CS, UIUC (expected 2028)
+  since: Dec 2025
+
+- name: Alan Xie
+  role: undergrad
+  affiliation: BS CS, UIUC (expected 2029)
+  since: Dec 2025
+
+- name: Aarav Khanna
+  role: undergrad
+  affiliation: BS Physics, UIUC (expected 2028)
+  since: Dec 2025
+
+# ── Alumni ────────────────────────────────────────────────────────────────────
+
+- name: Krut Patel
+  role: alumni
+  affiliation: MS CS, UIUC (graduated 2025)
+  since: Apr 2024
+  until: May 2025
+  now: Compiler Engineer, NVIDIA
+
+- name: Kaustubh Khulbe
+  url: https://www.linkedin.com/in/kaustubh-khulbe-b97320208/
+  role: alumni
+  affiliation: BS CS, UIUC (graduated 2026)
+  since: Dec 2024
+  until: Jan 2026
+
+- name: Advait Tahilyani
+  url: https://www.advaittahilyani.com/
+  role: alumni
+  affiliation: BS CS, UIUC (expected 2027)
+  since: May 2025
+  until: Jan 2026
+
+- name: Zhihao Wang
+  role: alumni
+  affiliation: BS CS, UIUC (graduated 2025)
+  since: Apr 2024
+  until: May 2025
+  now: MS Student, UIUC
