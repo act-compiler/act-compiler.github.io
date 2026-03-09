@@ -1,8 +1,11 @@
 "MICRO":
-  color: "#800080"
+  color: "#D000D0"
 
 "POPL":
-  color: "#008000"
+  color: "#00C000"
 
 "arXiv":
   color: "#2698BA"
+
+"ISPASS":
+  color: "#D000D0"
