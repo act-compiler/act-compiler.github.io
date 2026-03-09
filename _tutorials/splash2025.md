@@ -1,20 +1,17 @@
 ---
-layout: page
-title: SPLASH 2025
+layout: tutorial
+title: "End-to-End Compiler Infrastructure for Emerging Tensor Accelerators"
 permalink: /tutorials/splash2025/
-description: In Singapore on Oct 12, 2025
 importance: 3
----
-
-## Tutorial: End-to-End Compiler Infrastructure for Emerging Tensor Accelerators
-
-Host Conference: SPLASH 2025 (co-located with ICFP 2025)  
-Date: **Oct 12, 2025** (Sunday)  
-Time: **2:00 PM - 5:30 PM** (UTC+8)  
-Venue: Seminar Room 6 (**COM1-02-03**), NUS School of Computing  
-Location: COM1 Level 2, 13 Computing Dr, Singapore - 117417  
-Prerequisites: Please bring your own laptop with a working installation of Docker.  
-
+conference_full: "SPLASH 2025 (co-located with ICFP 2025)"
+conference: SPLASH 2025
+date_str: Oct 12, 2025
+day: Sunday
+time_str: "2:00 PM - 5:30 PM (UTC+8)"
+venue: "Seminar Room 6 (COM1-02-03), NUS School of Computing"
+location: "COM1 Level 2, 13 Computing Dr, Singapore - 117417"
+prerequisites: Bring your own laptop with a working installation of Docker.
+github: https://github.com/act-compiler/tutorials-splash25
 ---
 
 ## Introduction

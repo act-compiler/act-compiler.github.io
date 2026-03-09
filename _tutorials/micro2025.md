@@ -1,20 +1,16 @@
 ---
-layout: page
-title: MICRO 2025
+layout: tutorial
+title: "End-to-End Compiler Infrastructure for Emerging Tensor Accelerators"
 permalink: /tutorials/micro2025/
-description: In Seoul, South Korea on Oct 19, 2025
 importance: 2
----
-
-## Tutorial: End-to-End Compiler Infrastructure for Emerging Tensor Accelerators
-
-Host Conference: MICRO 2025  
-Date: **Oct 19, 2025** (Sunday)  
-Time: **1:00 PM - 5:00 PM** (UTC+9)  
-Venue: Berkeley Suite, 36th Floor, Lotte Hotel Seoul  
-Location: 30 Eulji-ro, Jung District, Seoul, South Korea  
-Prerequisites: Please bring your own laptop with a working installation of Docker and follow the [tutorial setup instructions](https://github.com/act-compiler/act/blob/master/tutorials/micro25/setup.md).
-
+conference: MICRO 2025
+date_str: Oct 19, 2025
+day: Sunday
+time_str: "1:00 PM - 5:00 PM (UTC+9)"
+venue: "Berkeley Suite, 36th Floor, Lotte Hotel Seoul"
+location: "30 Eulji-ro, Jung District, Seoul, South Korea"
+prerequisites: Bring your own laptop with a working installation of Docker and follow the <a href="https://github.com/act-compiler/act/blob/master/tutorials/micro25/setup.md" target="_blank">tutorial setup instructions</a>.
+github: https://github.com/act-compiler/act/tree/master/tutorials/micro25
 ---
 
 ## Introduction

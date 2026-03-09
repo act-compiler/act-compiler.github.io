@@ -1,0 +1,13 @@
+{%- assign _t = include.t -%}
+{%- assign _conf = _t.conference_full | default: _t.conference -%}
+<div class="tutorial-meta">
+  <table>
+    {%- if _conf %}<tr><th>Conference</th><td>{{ _conf }}</td></tr>{% endif -%}
+    {%- if _t.date_str %}<tr><th>Date</th><td><strong>{{ _t.date_str }}</strong>{% if _t.day %} ({{ _t.day }}){% endif %}</td></tr>{% endif -%}
+    {%- if _t.time_str %}<tr><th>Time</th><td><strong>{{ _t.time_str }}</strong></td></tr>{% endif -%}
+    {%- if _t.venue %}<tr><th>Venue</th><td>{{ _t.venue }}</td></tr>{% endif -%}
+    {%- if _t.location %}<tr><th>Location</th><td>{{ _t.location }}</td></tr>{% endif -%}
+    {%- if _t.github %}<tr><th>GitHub</th><td>{% if _t.github contains "http" %}<a href="{{ _t.github }}" target="_blank"><i class="fa-brands fa-github"></i> View Repository</a>{% else %}{{ _t.github }}{% endif %}</td></tr>{% endif -%}
+    {%- if _t.prerequisites %}<tr><th>Prerequisites</th><td>{{ _t.prerequisites }}</td></tr>{% endif -%}
+  </table>
+</div>

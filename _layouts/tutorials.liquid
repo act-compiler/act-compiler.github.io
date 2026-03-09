@@ -1,0 +1,71 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <article>
+    <style>
+      .tutorial-list { display: flex; flex-direction: column; gap: 0; margin-top: 1rem; }
+
+      .tutorial-item { border: 1px solid #e8e8e8; border-radius: 6px; margin-bottom: 0.6rem; overflow: hidden; }
+
+      .tutorial-summary {
+        display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+        padding: 0.75rem 1.1rem; cursor: pointer; list-style: none;
+        background: #fafafa; user-select: none;
+      }
+      .tutorial-summary::-webkit-details-marker { display: none; }
+      .tutorial-item[open] .tutorial-summary { background: #f3f3f3; border-bottom: 1px solid #e8e8e8; }
+
+      .ts-toggle { color: #999; font-size: 0.85rem; transition: transform 0.2s; flex-shrink: 0; }
+      .tutorial-item[open] .ts-toggle { transform: rotate(90deg); }
+
+      .ts-title { font-weight: 600; font-size: 1rem; flex: 1 1 200px; }
+      .ts-meta  { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+      .ts-conf  { font-size: 0.85rem; color: #555; background: #ececec; border-radius: 4px; padding: 0.15rem 0.5rem; white-space: nowrap; }
+      .ts-date  { font-size: 0.85rem; color: #555; white-space: nowrap; }
+
+      .tutorial-body { padding: 0.9rem 1.2rem 1rem; font-size: 0.92rem; }
+      .tutorial-body .tb-links { margin-top: 0.6rem; }
+      .tutorial-body .tb-links a { font-size: 0.88rem; }
+
+      .tutorial-controls { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
+      .tutorial-controls button {
+        font-size: 0.82rem; padding: 0.25rem 0.75rem; border-radius: 4px;
+        border: 1px solid #ccc; background: #f5f5f5; cursor: pointer; color: #444;
+      }
+      .tutorial-controls button:hover { background: #e8e8e8; }
+    </style>
+
+    {% assign sorted_tutorials = site.tutorials | sort: "importance" %}
+
+    <div class="tutorial-controls">
+      <button onclick="document.querySelectorAll('.tutorial-item').forEach(d => d.open = true)">Expand All</button>
+      <button onclick="document.querySelectorAll('.tutorial-item').forEach(d => d.open = false)">Collapse All</button>
+    </div>
+
+    <div class="tutorial-list">
+      {% for t in sorted_tutorials %}
+        <details class="tutorial-item">
+          <summary class="tutorial-summary">
+            <span class="ts-toggle">&#9658;</span>
+            <span class="ts-title">{{ t.title }}</span>
+            <span class="ts-meta">
+              {% if t.conference %}<span class="ts-conf">{{ t.conference }}</span>{% endif %}
+              {% if t.date_str %}<span class="ts-date">{{ t.date_str }}</span>{% endif %}
+            </span>
+          </summary>
+          <div class="tutorial-body">
+            {% include tutorial-meta.liquid t=t %}
+            <div class="tb-links">
+              <a href="{{ t.url | relative_url }}">For more details →</a>
+            </div>
+          </div>
+        </details>
+      {% endfor %}
+    </div>
+  </article>
+</div>
