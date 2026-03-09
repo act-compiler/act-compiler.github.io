@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-tutorials",
+  },{id: "nav-team",
+          title: "Team",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/team/";
+          },
+        },{id: "nav-tutorials",
           title: "Tutorials",
           description: "",
           section: "Navigation",
@@ -28,56 +35,21 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/repositories/";
+            window.location.href = "/https:/github.com/act-compiler/act";
           },
-        },{id: "news-our-paper-titled-taidl-tensor-accelerator-isa-definition-language-with-auto-generation-of-scalable-test-oracles-has-been-accepted-at-micro-2025-tada",
-          title: 'Our paper titled TAIDL: Tensor Accelerator ISA Definition Language with Auto-generation of Scalable...',
+        },{id: "tutorials-act-end-to-end-compiler-infrastructure-for-emerging-ai-accelerators",
+          title: 'ACT: End-to-End Compiler Infrastructure for Emerging AI Accelerators',
           description: "",
-          section: "News",},{id: "news-we-organized-a-hands-on-tutorial-on-the-act-ecosystem-at-icfp-splash-2025-in-singapore",
-          title: 'We organized a hands-on tutorial on the ACT Ecosystem at ICFP/SPLASH 2025 in...',
-          description: "",
-          section: "News",},{id: "news-we-organized-a-hands-on-tutorial-on-the-act-ecosystem-at-micro-2025-in-seoul-south-korea",
-          title: 'We organized a hands-on tutorial on the ACT Ecosystem at MICRO 2025 in...',
-          description: "",
-          section: "News",},{id: "tutorials-asplos-2026",
-          title: 'ASPLOS 2026',
-          description: "In Pittsburgh, USA on Mar 22, 2026",
           section: "Tutorials",handler: () => {
               window.location.href = "/tutorials/asplos2026/";
-            },},{id: "tutorials-micro-2025",
-          title: 'MICRO 2025',
-          description: "In Seoul, South Korea on Oct 19, 2025",
+            },},{id: "tutorials-end-to-end-compiler-infrastructure-for-emerging-tensor-accelerators",
+          title: 'End-to-End Compiler Infrastructure for Emerging Tensor Accelerators',
+          description: "",
           section: "Tutorials",handler: () => {
               window.location.href = "/tutorials/micro2025/";
-            },},{id: "tutorials-splash-2025",
-          title: 'SPLASH 2025',
-          description: "In Singapore on Oct 12, 2025",
+            },},{id: "tutorials-end-to-end-compiler-infrastructure-for-emerging-tensor-accelerators",
+          title: 'End-to-End Compiler Infrastructure for Emerging Tensor Accelerators',
+          description: "",
           section: "Tutorials",handler: () => {
               window.location.href = "/tutorials/splash2025/";
-            },},{
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },];
+            },},];
