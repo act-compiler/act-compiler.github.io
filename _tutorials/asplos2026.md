@@ -9,27 +9,27 @@ day: Sunday
 time_str: "1:30 PM - 6:00 PM (UTC-4)"
 venue: "Ohio Room, The Landing Hotel"
 location: "757 Casino Dr. Pittsburgh, PA, USA"
-prerequisites: Bring your own laptop with a working installation of Docker. Setup instructions coming soon.
-github: Will be released soon.
+prerequisites: Bring your own laptop with a working installation of Docker and follow the <a href="https://github.com/act-compiler/act/tree/master/tutorials/asplos26/setup.md" target="_blank">tutorial setup instructions</a>.
+github: https://github.com/act-compiler/act/tree/master/tutorials/asplos26.
 ---
 
 ## Introduction
 
-Recent years have seen a proliferation of specialized ML accelerators -- proposed in both academia (e.g., Gemmini, FEATHER) and industry (e.g., Google TPU, Intel AMX) -- that depart significantly from traditional CPU/GPU architectures.
-However, research on compiler and systems support for these accelerators remains sparse, largely due to the lack of mature open-source compiler infrastructures capable of targeting them from popular ML frameworks like PyTorch, and JAX.
+Recent years have seen a proliferation of specialized AI accelerators -- proposed in both academia (e.g., Gemmini, FEATHER) and industry (e.g., Google TPU, Intel AMX) -- that depart significantly from traditional CPU/GPU architectures.
+However, research on compiler and systems support for these accelerators remains sparse, largely due to the lack of mature open-source ML compiler infrastructures capable of targeting them from popular ML frameworks like PyTorch, and JAX.
 Building such support involves considerable manual effort, slowing innovation and creating a gap between hardware and software research communities.
 
-This tutorial introduces the **ACT (Accelerator Compiler Toolkit)**, an ecosystem that automatically generates complete compiler backends and essential software tooling from high-level ISA specifications of tensor accelerators.
+This tutorial introduces the **ACT (Accelerator Compiler Toolkit)**, an ecosystem that automatically generates complete ML compiler backends and essential software tooling from high-level ISA specifications of AI accelerators.
 
 The ACT ecosystem consists of:
 
-1. **TAIDL (Tensor Accelerator ISA Definition Language)**: A Python-based DSL for specifying tensor accelerator ISAs
+1. **TAIDL (Tensor Accelerator ISA Definition Language)**: A Python-based DSL for specifying AI accelerator ISAs
 2. **TAIDL-TO (Test Oracle) Generator**: Automatically generates _fast & scalable_ functional simulators from TAIDL specifications
-3. **ACT Backend Generator**: Automatically generates _sound & complete_ compiler backends just from TAIDL specifications
+3. **ACT Backend Generator**: Automatically generates _sound & complete_ ML compiler backends just from TAIDL specifications
 4. **XLA Integration**: Enables end-to-end compilation from popular ML frameworks like JAX, TensorFlow, and PyTorch
 
 The tutorial is designed for researchers, practitioners, and students interested in compiler design, programming languages, and AI/ML hardware.
-By the end, participants will have hands-on experience with the complete ACT workflow and understand how to rapidly prototype compiler support for novel accelerator architectures.
+By the end, participants will have hands-on experience with the complete ACT workflow and understand how to rapidly prototype ML compiler support for novel AI accelerator architectures.
 
 ---
 
