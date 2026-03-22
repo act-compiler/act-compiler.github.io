@@ -10,12 +10,12 @@ time_str: "1:30 PM - 6:00 PM (UTC-4)"
 venue: "Ohio Room, The Landing Hotel"
 location: "757 Casino Dr. Pittsburgh, PA, USA"
 prerequisites: Bring your own laptop with a working installation of Docker and follow the <a href="https://github.com/act-compiler/act/tree/master/tutorials/asplos26/setup.md" target="_blank">tutorial setup instructions</a>.
-github: https://github.com/act-compiler/act/tree/master/tutorials/asplos26.
+github: https://github.com/act-compiler/act/tree/master/tutorials/asplos26
 ---
 
 ## Introduction
 
-Recent years have seen a proliferation of specialized AI accelerators -- proposed in both academia (e.g., Gemmini, FEATHER) and industry (e.g., Google TPU, Intel AMX) -- that depart significantly from traditional CPU/GPU architectures.
+Recent years have seen a proliferation of specialized AI accelerators -- proposed in both academia (e.g., Gemmini, FEATHER, EVA) and industry (e.g., Google TPU, Intel AMX, AWS Trainium) -- that depart significantly from traditional CPU/GPU architectures.
 However, research on compiler and systems support for these accelerators remains sparse, largely due to the lack of mature open-source ML compiler infrastructures capable of targeting them from popular ML frameworks like PyTorch, and JAX.
 Building such support involves considerable manual effort, slowing innovation and creating a gap between hardware and software research communities.
 
