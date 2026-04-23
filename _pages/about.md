@@ -29,10 +29,8 @@ TAIDL leverages tensor IRs like XLA-HLO to compactly and precisely model executi
 
 ### Getting Started
 
-We recommend starting with our [MICRO 2025 tutorial](https://github.com/act-compiler/act/tree/master/tutorials/micro25).
+We recommend starting with our [ASPLOS 2026 tutorial](https://github.com/act-compiler/act/tree/master/tutorials/asplos2026).
 The tutorial provides a step-by-step walkthrough of the ACT ecosystem, requiring no prior experience with AI accelerators or ML compilers, and provides hands-on exercises to get familiar with the TAIDL Python DSL and automated tool generation. We encourage you to follow along and experiment with the code.
-
-A revised tutorial will be presented at [ASPLOS 2026](/tutorials/asplos2026/) (Pittsburgh, Mar 22) -- updated materials coming soon.
 
 ### Collaboration Opportunities
 
