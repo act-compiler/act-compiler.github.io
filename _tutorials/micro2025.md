@@ -9,8 +9,8 @@ day: Sunday
 time_str: "1:00 PM - 5:00 PM (UTC+9)"
 venue: "Berkeley Suite, 36th Floor, Lotte Hotel Seoul"
 location: "30 Eulji-ro, Jung District, Seoul, South Korea"
-prerequisites: Bring your own laptop with a working installation of Docker and follow the <a href="https://github.com/act-compiler/act/blob/master/tutorials/micro25/setup.md" target="_blank">tutorial setup instructions</a>.
-github: https://github.com/act-compiler/act/tree/master/tutorials/micro25
+prerequisites: Bring your own laptop with a working installation of Docker and follow the <a href="https://github.com/act-compiler/act/tree/micro25/tutorials/micro25/setup.md" target="_blank">tutorial setup instructions</a>.
+github: https://github.com/act-compiler/act/tree/micro25/tutorials/micro25
 ---
 
 ## Introduction

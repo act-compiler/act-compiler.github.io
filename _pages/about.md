@@ -31,7 +31,7 @@ ACT-related research has been published in top-tier conferences such as POPL and
 
 ### Getting Started
 
-We recommend starting with our [ASPLOS 2026 tutorial](https://github.com/act-compiler/act/tree/master/tutorials/asplos26).
+We recommend starting with our [ASPLOS 2026 tutorial](https://github.com/act-compiler/act/tree/asplos26/tutorials/asplos26).
 The tutorial provides a step-by-step walkthrough of the ACT ecosystem, requiring no prior experience with AI accelerators or ML compilers, and provides hands-on exercises to get familiar with the TAIDL Python DSL and automated tool generation. We encourage you to follow along and experiment with the code.
 
 ### Collaboration Opportunities

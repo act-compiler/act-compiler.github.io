@@ -9,8 +9,8 @@ day: Sunday
 time_str: "1:30 PM - 6:00 PM (UTC-4)"
 venue: "Ohio Room, The Landing Hotel"
 location: "757 Casino Dr. Pittsburgh, PA, USA"
-prerequisites: Bring your own laptop with a working installation of Docker and follow the <a href="https://github.com/act-compiler/act/tree/master/tutorials/asplos26/setup.md" target="_blank">tutorial setup instructions</a>.
-github: https://github.com/act-compiler/act/tree/master/tutorials/asplos26
+prerequisites: Bring your own laptop with a working installation of Docker and follow the <a href="https://github.com/act-compiler/act/tree/asplos26/tutorials/asplos26/setup.md" target="_blank">tutorial setup instructions</a>.
+github: https://github.com/act-compiler/act/tree/asplos26/tutorials/asplos26
 ---
 
 ## Introduction
