@@ -47,6 +47,11 @@ ninja.data = [{
           description: "",
           section: "Tutorials",handler: () => {
               window.location.href = "/tutorials/micro2025/";
+            },},{id: "tutorials-act-end-to-end-compiler-infrastructure-for-emerging-ai-accelerators",
+          title: 'ACT: End-to-End Compiler Infrastructure for Emerging AI Accelerators',
+          description: "",
+          section: "Tutorials",handler: () => {
+              window.location.href = "/tutorials/pldi2026/";
             },},{id: "tutorials-end-to-end-compiler-infrastructure-for-emerging-tensor-accelerators",
           title: 'End-to-End Compiler Infrastructure for Emerging Tensor Accelerators',
           description: "",
